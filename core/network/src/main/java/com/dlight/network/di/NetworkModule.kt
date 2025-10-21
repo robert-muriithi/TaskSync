@@ -19,7 +19,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
     private const val BASE_URL = "http://10.0.2.2:3000/"
-    private const val PHYSICAL_DEVICE_BASE_URL = "http://10.22.60.241:3000/"
+//    private const val PHYSICAL_DEVICE_BASE_URL = "http://10.22.60.241:3000/"
     
     @Provides
     @Singleton
@@ -49,7 +49,7 @@ object NetworkModule {
         gson: Gson
     ): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(PHYSICAL_DEVICE_BASE_URL)
+            .baseUrl(BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
