@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">TaskSync</string>
+    
+    <!-- Login Screen -->
+    <string name="login_welcome">Welcome</string>
+    <string name="login_subtitle">Sign in to manage your tasks</string>
+    <string name="login_email_label">Email</string>
+    <string name="login_email_placeholder">Enter your email</string>
+    <string name="login_button">Sign In</string>
+    <string name="login_no_password_info">No password required to sign in</string>
+    <string name="login_invalid_email">Please enter a valid email address</string>
+    
+    <!-- Tasks Screen -->
+    <string name="tasks_title">Tasks</string>
+    <string name="tasks_logout">Logout</string>
+    <string name="tasks_add">Add Task</string>
+    <string name="tasks_empty">No tasks yet</string>
+    <string name="tasks_empty_subtitle">Tap + to create your first task</string>
+    <string name="tasks_pending_sync">%d pending sync</string>
+    <string name="tasks_pending_sync_plural">%d pending syncs</string>
+    <string name="tasks_syncing">Syncing…</string>
+    <string name="tasks_sync_success">All tasks synced</string>
+    <string name="tasks_sync_error">Sync failed</string>
+    <string name="tasks_pull_to_refresh">Pull to refresh</string>
+    
+    <!-- Add Task Screen -->
+    <string name="add_task_title">Add New Task</string>
+    <string name="add_task_title_label">Title</string>
+    <string name="add_task_title_placeholder">Enter task title</string>
+    <string name="add_task_description_label">Description</string>
+    <string name="add_task_description_placeholder">Enter task description</string>
+    <string name="add_task_save">Save Task</string>
+    <string name="add_task_cancel">Cancel</string>
+    <string name="add_task_title_required">Title is required</string>
+    <string name="add_task_success">Task created successfully</string>
+    
+    <!-- Task Details Screen -->
+    <string name="task_details_title">Task Details</string>
+    <string name="task_details_edit">Edit Task</string>
+    <string name="task_details_delete">Delete Task</string>
+    <string name="task_details_save">Save Changes</string>
+    <string name="task_details_completed">Completed</string>
+    <string name="task_details_incomplete">Incomplete</string>
+    <string name="task_details_delete_confirm_title">Delete Task?</string>
+    <string name="task_details_delete_confirm_message">Are you sure you want to delete this task? This action cannot be undone.</string>
+    <string name="task_details_delete_confirm">Delete</string>
+    <string name="task_details_delete_cancel">Cancel</string>
+    <string name="task_details_updated">Task updated successfully</string>
+    <string name="task_details_deleted">Task deleted successfully</string>
+    
+    <!-- Sync Status -->
+    <string name="sync_status_synced">Synced</string>
+    <string name="sync_status_pending">Pending</string>
+    <string name="sync_status_syncing">Syncing</string>
+    <string name="sync_status_conflict">Conflict</string>
+    
+    <!-- Common -->
+    <string name="common_loading">Loading…</string>
+    <string name="common_error">Error</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_back">Back</string>
+    <string name="common_close">Close</string>
+    <string name="common_save">Save</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_edit">Edit</string>
+    <string name="common_done">Done</string>
+    
+    <!-- Content Descriptions -->
+    <string name="cd_add_task">Add new task</string>
+    <string name="cd_back_button">Navigate back</string>
+    <string name="cd_delete_task">Delete task</string>
+    <string name="cd_task_completed">Task completed</string>
+    <string name="cd_task_incomplete">Task incomplete</string>
+    <string name="cd_sync_indicator">Sync status indicator</string>
+    <string name="cd_logout">Logout</string>
+    <string name="cd_email_icon">Email</string>
+    
+    <!-- Error Messages -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_unknown">An unknown error occurred</string>
+    <string name="error_login_failed">Login failed. Please try again.</string>
+    <string name="error_task_load_failed">Failed to load task</string>
+    <string name="error_task_save_failed">Failed to save task</string>
+    <string name="error_task_delete_failed">Failed to delete task</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_loading">Loading...</string>
+</resources>

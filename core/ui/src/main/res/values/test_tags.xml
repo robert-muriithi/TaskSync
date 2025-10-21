@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Test Tags for UI Testing -->
+    
+    <!-- Login Screen -->
+    <string name="test_tag_login_screen">loginScreen</string>
+    <string name="test_tag_login_email_field">loginEmailField</string>
+    <string name="test_tag_login_button">loginButton</string>
+    <string name="test_tag_login_welcome_text">loginWelcomeText</string>
+    <string name="test_tag_login_subtitle">loginSubtitle</string>
+    <string name="test_tag_login_error">loginError</string>
+    
+    <!-- Tasks Screen -->
+    <string name="test_tag_tasks_screen">tasksScreen</string>
+    <string name="test_tag_tasks_list">tasksList</string>
+    <string name="test_tag_tasks_fab">tasksFab</string>
+    <string name="test_tag_tasks_top_bar">tasksTopBar</string>
+    <string name="test_tag_tasks_logout_button">tasksLogoutButton</string>
+    <string name="test_tag_tasks_empty_state">tasksEmptyState</string>
+    <string name="test_tag_tasks_sync_banner">tasksSyncBanner</string>
+    <string name="test_tag_tasks_pending_count">tasksPendingCount</string>
+    
+    <!-- Task Item -->
+    <string name="test_tag_task_item">taskItem</string>
+    <string name="test_tag_task_item_title">taskItemTitle</string>
+    <string name="test_tag_task_item_checkbox">taskItemCheckbox</string>
+    <string name="test_tag_task_item_sync_badge">taskItemSyncBadge</string>
+    
+    <!-- Add Task Screen -->
+    <string name="test_tag_add_task_screen">addTaskScreen</string>
+    <string name="test_tag_add_task_title_field">addTaskTitleField</string>
+    <string name="test_tag_add_task_description_field">addTaskDescriptionField</string>
+    <string name="test_tag_add_task_save_button">addTaskSaveButton</string>
+    <string name="test_tag_add_task_back_button">addTaskBackButton</string>
+    
+    <!-- Task Details Screen -->
+    <string name="test_tag_task_details_screen">taskDetailsScreen</string>
+    <string name="test_tag_task_details_title_field">taskDetailsTitleField</string>
+    <string name="test_tag_task_details_description_field">taskDetailsDescriptionField</string>
+    <string name="test_tag_task_details_completed_checkbox">taskDetailsCompletedCheckbox</string>
+    <string name="test_tag_task_details_save_button">taskDetailsSaveButton</string>
+    <string name="test_tag_task_details_delete_button">taskDetailsDeleteButton</string>
+    <string name="test_tag_task_details_delete_dialog">taskDetailsDeleteDialog</string>
+    <string name="test_tag_task_details_delete_confirm">taskDetailsDeleteConfirm</string>
+    
+    <!-- Common Components -->
+    <string name="test_tag_button">button</string>
+    <string name="test_tag_text_field">textField</string>
+    <string name="test_tag_loading_indicator">loadingIndicator</string>
+    <string name="test_tag_error_message">errorMessage</string>
+    <string name="test_tag_snackbar">snackbar</string>
+</resources>

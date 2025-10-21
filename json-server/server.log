@@ -1,0 +1,482 @@
+
+╔════════════════════════════════════════════════════════════╗
+║                                                            ║
+║         📱 TaskSync Mock Server - d.light                 ║
+║                                                            ║
+╚════════════════════════════════════════════════════════════╝
+
+🚀 Server running at: http://localhost:3000
+📱 Android Emulator: http://10.0.2.2:3000
+
+📡 Available Endpoints:
+   POST   /auth/login              - Login (no password)
+   GET    /tasks                   - Get all tasks
+   GET    /tasks?updatedAt_gte=... - Get tasks since timestamp
+   POST   /tasks                   - Create task
+   PUT    /tasks/:id               - Update task
+   DELETE /tasks/:id               - Delete task
+   POST   /sync                    - Batch sync
+
+📝 Press Ctrl+C to stop
+
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 1.347 ms - 647[0m
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 1.028 ms - 647[0m
+📥 Fetching tasks since 2025-10-17T13:47:15.195Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T13%3A47%3A15.195Z [32m200[0m 1.535 ms - 2[0m
+📥 Fetching tasks since 2025-10-17T13:49:34.950Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T13%3A49%3A34.950Z [32m200[0m 1.436 ms - 2[0m
+📥 Fetching tasks since 2025-10-17T14:00:49.519Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T14%3A00%3A49.519Z [32m200[0m 1.183 ms - 2[0m
+📥 Fetching tasks since 2025-10-17T14:02:02.940Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T14%3A02%3A02.940Z [32m200[0m 1.548 ms - 2[0m
+📥 Fetching tasks since 2025-10-17T14:02:18.481Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T14%3A02%3A18.481Z [32m200[0m 1.475 ms - 2[0m
+📥 Fetching tasks since 2025-10-17T14:06:25.713Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T14%3A06%3A25.713Z [32m200[0m 1.299 ms - 2[0m
+✅ Login successful: test@gmail.com
+[0mPOST /auth/login [32m200[0m 22.242 ms - 121[0m
+✅ Login successful: test@gmail.com
+[0mPOST /auth/login [32m200[0m 2.351 ms - 121[0m
+📥 Fetching tasks since 2025-10-17T14:10:33.739Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T14%3A10%3A33.739Z [32m200[0m 0.964 ms - 2[0m
+📥 Fetching tasks since 2025-10-17T14:19:09.730Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T14%3A19%3A09.730Z [32m200[0m 1.390 ms - 2[0m
+📥 Fetching tasks since 2025-10-17T14:20:01.528Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T14%3A20%3A01.528Z [32m200[0m 1.583 ms - 2[0m
+📥 Fetching tasks since 2025-10-17T14:21:25.820Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T14%3A21%3A25.820Z [32m200[0m 1.296 ms - 2[0m
+📥 Fetching tasks since 2025-10-17T14:39:02.172Z: 0 tasks
+[0mGET /tasks?updatedAt_gte=2025-10-17T14%3A39%3A02.172Z [32m200[0m 1.744 ms - 2[0m
+✅ Updated task: 1
+🔄 Sync complete: 0 created, 1 updated, 0 conflicts
+[0mPOST /sync [32m200[0m 9.053 ms - 114[0m
+ℹ️  No change for task: 1
+🔄 Sync complete: 0 created, 0 updated, 0 conflicts
+[0mPOST /sync [32m200[0m 2.707 ms - 99[0m
+📥 Fetching tasks since 2025-01-17T11:00:00Z: 3 tasks
+[0mGET /tasks?since=2025-01-17T11:00:00Z [32m200[0m 8.047 ms - 649[0m
+✅ Login successful: test@gmail.com
+[0mPOST /auth/login [32m200[0m 10.501 ms - 121[0m
+📥 Fetching tasks since 2025-01-17T11:00:00Z: 3 tasks
+[0mGET /tasks?since=2025-01-17T11:00:00Z [32m200[0m 0.906 ms - 649[0m
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 17.206 ms - 649[0m
+✅ Auto-updated timestamp for task: 2
+PUT /tasks/2
+[0mPUT /tasks/2 [32m200[0m 56.399 ms - 233[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 4.217 ms - 184[0m
+📥 Fetching tasks since 2025-10-17T14:54:58.053Z: 2 tasks
+[0mGET /tasks?since=2025-10-17T14%3A54%3A58.053Z [32m200[0m 0.912 ms - 455[0m
+✅ Login successful: test@gmail.com
+[0mPOST /auth/login [32m200[0m 3.644 ms - 121[0m
+✅ Auto-updated timestamp for task: 2
+PUT /tasks/2
+[0mPUT /tasks/2 [32m200[0m 5.068 ms - 234[0m
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 0.828 ms - 654[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 14.481 ms - 185[0m
+📥 Fetching tasks since 2025-10-18T06:23:02.929Z: 2 tasks
+[0mGET /tasks?since=2025-10-18T06%3A23%3A02.929Z [32m200[0m 0.173 ms - 457[0m
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 1.545 ms - 655[0m
+📥 Fetching tasks since 2025-10-18T06:25:26.928Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T06%3A25%3A26.928Z [32m200[0m 1.189 ms - 205[0m
+📥 Fetching tasks since 2025-10-18T06:28:05.801Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T06%3A28%3A05.801Z [32m200[0m 0.664 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T06:28:08.102Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T06%3A28%3A08.102Z [32m200[0m 0.387 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T06:28:10.039Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T06%3A28%3A10.039Z [32m200[0m 0.636 ms - 2[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 3.860 ms - 184[0m
+📥 Fetching tasks since 2025-10-18T06:28:12.225Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T06%3A28%3A12.225Z [32m200[0m 0.576 ms - 204[0m
+📥 Fetching tasks since 2025-10-18T06:28:15.473Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T06%3A28%3A15.473Z [32m200[0m 0.759 ms - 204[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 4.047 ms - 184[0m
+✅ Auto-updated timestamp for task: 3
+PUT /tasks/3
+[0mPUT /tasks/3 [32m200[0m 4.415 ms - 184[0m
+✅ Auto-updated timestamp for task: 2
+PUT /tasks/2
+[0mPUT /tasks/2 [32m200[0m 3.983 ms - 233[0m
+📥 Fetching tasks since 2025-10-18T06:28:18.654Z: 3 tasks
+[0mGET /tasks?since=2025-10-18T06%3A28%3A18.654Z [32m200[0m 0.572 ms - 657[0m
+📥 Fetching tasks since 2025-10-18T06:29:14.254Z: 3 tasks
+[0mGET /tasks?since=2025-10-18T06%3A29%3A14.254Z [32m200[0m 1.335 ms - 657[0m
+📥 Fetching tasks since 2025-10-18T06:34:30.803Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T06%3A34%3A30.803Z [32m200[0m 0.342 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T06:34:32.739Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T06%3A34%3A32.739Z [32m200[0m 0.491 ms - 2[0m
+✅ Auto-updated timestamp for task: 2
+PUT /tasks/2
+[0mPUT /tasks/2 [32m200[0m 17.197 ms - 234[0m
+📥 Fetching tasks since 2025-10-18T06:34:34.337Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T06%3A34%3A34.337Z [32m200[0m 0.276 ms - 254[0m
+📥 Fetching tasks since 2025-10-18T06:35:36.183Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T06%3A35%3A36.183Z [32m200[0m 0.900 ms - 254[0m
+📥 Fetching tasks since 2025-10-18T06:36:11.153Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T06%3A36%3A11.153Z [32m200[0m 3.177 ms - 2[0m
+✅ Auto-updated timestamp for task: 2
+PUT /tasks/2
+[0mPUT /tasks/2 [32m200[0m 5.766 ms - 233[0m
+📥 Fetching tasks since 2025-10-18T06:45:24.632Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T06%3A45%3A24.632Z [32m200[0m 0.368 ms - 253[0m
+📥 Fetching tasks since 2025-10-18T06:46:01.761Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T06%3A46%3A01.761Z [32m200[0m 2.356 ms - 253[0m
+✅ Auto-updated timestamp for task: 3
+PUT /tasks/3
+[0mPUT /tasks/3 [32m200[0m 10.200 ms - 185[0m
+✅ Auto-updated timestamp for task: 2
+PUT /tasks/2
+[0mPUT /tasks/2 [32m200[0m 3.783 ms - 234[0m
+📥 Fetching tasks since 2025-10-18T06:47:00.990Z: 2 tasks
+[0mGET /tasks?since=2025-10-18T06%3A47%3A00.990Z [32m200[0m 0.410 ms - 457[0m
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 0.764 ms - 659[0m
+📥 Fetching tasks since 2025-10-18T06:48:07.021Z: 2 tasks
+[0mGET /tasks?since=2025-10-18T06%3A48%3A07.021Z [32m200[0m 1.711 ms - 457[0m
+📥 Fetching tasks since 2025-10-18T06:51:11.456Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T06%3A51%3A11.456Z [32m200[0m 1.068 ms - 2[0m
+✅ Auto-updated timestamp for task: 2
+PUT /tasks/2
+[0mPUT /tasks/2 [32m200[0m 8.356 ms - 233[0m
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 0.319 ms - 658[0m
+✅ Login successful: test@gmail.com
+[0mPOST /auth/login [32m200[0m 3.269 ms - 121[0m
+✅ Login successful: test@gmail.com
+[0mPOST /auth/login [32m200[0m 1.730 ms - 121[0m
+✅ Auto-updated timestamp for task: 3
+PUT /tasks/3
+[0mPUT /tasks/3 [32m200[0m 4.336 ms - 184[0m
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 0.297 ms - 657[0m
+📥 Fetching tasks since 2025-10-18T07:03:02.035Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T07%3A03%3A02.035Z [32m200[0m 1.488 ms - 204[0m
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 5.582 ms - 657[0m
+📥 Fetching tasks since 2025-10-18T07:04:01.431Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A04%3A01.431Z [32m200[0m 2.291 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T07:18:12.146Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A18%3A12.146Z [32m200[0m 1.063 ms - 2[0m
+✅ Auto-updated timestamp for task: 3
+PUT /tasks/3
+[0mPUT /tasks/3 [32m200[0m 13.459 ms - 185[0m
+📥 Fetching tasks since 2025-10-18T07:18:40.654Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T07%3A18%3A40.654Z [32m200[0m 0.267 ms - 205[0m
+📥 Fetching tasks since 2025-10-18T07:19:22.497Z: 1 tasks
+[0mGET /tasks?since=2025-10-18T07%3A19%3A22.497Z [32m200[0m 1.431 ms - 205[0m
+📥 Fetching all tasks: 3 tasks
+[0mGET /tasks [32m200[0m 0.833 ms - 658[0m
+📥 Fetching tasks since 2025-10-18T07:20:21.785Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A20%3A21.785Z [32m200[0m 0.917 ms - 2[0m
+✅ Auto-generated timestamps for new task: task_1760772491553_4883
+POST /tasks
+[0mPOST /tasks [32m201[0m 55.486 ms - 201[0m
+✅ Auto-generated timestamps for new task: task_1760772508304_4702
+POST /tasks
+[0mPOST /tasks [32m201[0m 3.418 ms - 214[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 3.752 ms - 186[0m
+📥 Fetching tasks since 2025-10-18T07:27:46.681Z: 3 tasks
+[0mGET /tasks?since=2025-10-18T07%3A27%3A46.681Z [32m200[0m 0.657 ms - 657[0m
+✅ Auto-generated timestamps for new task: task_1760772597826_9362
+POST /tasks
+[0mPOST /tasks [32m201[0m 6.483 ms - 194[0m
+✅ Auto-generated timestamps for new task: task_1760772604936_4376
+POST /tasks
+[0mPOST /tasks [32m201[0m 3.328 ms - 197[0m
+📥 Fetching tasks since 2025-10-18T07:29:11.785Z: 3 tasks
+[0mGET /tasks?since=2025-10-18T07%3A29%3A11.785Z [32m200[0m 0.269 ms - 633[0m
+📥 Fetching tasks since 2025-10-18T07:30:07.467Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A30%3A07.467Z [32m200[0m 0.372 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T07:30:14.049Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A30%3A14.049Z [32m200[0m 2.245 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T07:30:58.084Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A30%3A58.084Z [32m200[0m 1.053 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T07:33:12.598Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A33%3A12.598Z [32m200[0m 0.810 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T07:37:42.120Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A37%3A42.120Z [32m200[0m 1.487 ms - 2[0m
+✅ Auto-generated timestamps for new task: task_1760773101503_8988
+POST /tasks
+[0mPOST /tasks [32m201[0m 4.608 ms - 193[0m
+✅ Auto-generated timestamps for new task: task_1760773108999_4872
+POST /tasks
+[0mPOST /tasks [32m201[0m 4.826 ms - 192[0m
+📥 Fetching tasks since 2025-10-18T07:38:11.993Z: 2 tasks
+[0mGET /tasks?since=2025-10-18T07%3A38%3A11.993Z [32m200[0m 2.168 ms - 423[0m
+📥 Fetching tasks since 2025-10-18T07:38:31.765Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A38%3A31.765Z [32m200[0m 2.827 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T07:39:21.588Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A39%3A21.588Z [32m200[0m 0.495 ms - 2[0m
+📥 Fetching all tasks: 9 tasks
+[0mGET /tasks [32m200[0m 1.062 ms - 1959[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 6.065 ms - 186[0m
+✅ Auto-updated timestamp for task: task_1760772508304_4702
+PUT /tasks/task_1760772508304_4702
+[0mPUT /tasks/task_1760772508304_4702 [32m200[0m 3.896 ms - 213[0m
+✅ Auto-updated timestamp for task: task_1760772491553_4883
+PUT /tasks/task_1760772491553_4883
+[0mPUT /tasks/task_1760772491553_4883 [32m200[0m 2.932 ms - 200[0m
+✅ Auto-updated timestamp for task: 3
+PUT /tasks/3
+[0mPUT /tasks/3 [32m200[0m 3.133 ms - 184[0m
+📥 Fetching tasks since 2025-10-18T07:39:28.480Z: 4 tasks
+[0mGET /tasks?since=2025-10-18T07%3A39%3A28.480Z [32m200[0m 0.278 ms - 857[0m
+📥 Fetching tasks since 2025-10-18T07:40:52.770Z: 4 tasks
+[0mGET /tasks?since=2025-10-18T07%3A40%3A52.770Z [32m200[0m 0.350 ms - 857[0m
+✅ Auto-updated timestamp for task: 3
+PUT /tasks/3
+[0mPUT /tasks/3 [32m200[0m 2.455 ms - 185[0m
+✅ Auto-updated timestamp for task: task_1760772491553_4883
+PUT /tasks/task_1760772491553_4883
+[0mPUT /tasks/task_1760772491553_4883 [32m200[0m 4.740 ms - 201[0m
+✅ Auto-updated timestamp for task: task_1760772508304_4702
+PUT /tasks/task_1760772508304_4702
+[0mPUT /tasks/task_1760772508304_4702 [32m200[0m 4.332 ms - 214[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 3.697 ms - 187[0m
+📥 Fetching tasks since 2025-10-18T07:41:01.854Z: 4 tasks
+[0mGET /tasks?since=2025-10-18T07%3A41%3A01.854Z [32m200[0m 0.606 ms - 861[0m
+📥 Fetching all tasks: 9 tasks
+[0mGET /tasks [32m200[0m 0.530 ms - 1960[0m
+📥 Fetching tasks since 2025-10-18T07:42:04.408Z: 4 tasks
+[0mGET /tasks?since=2025-10-18T07%3A42%3A04.408Z [32m200[0m 1.255 ms - 861[0m
+📥 Fetching tasks since 2025-10-18T07:45:02.037Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A45%3A02.037Z [32m200[0m 0.408 ms - 2[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 6.777 ms - 186[0m
+✅ Auto-updated timestamp for task: task_1760772508304_4702
+PUT /tasks/task_1760772508304_4702
+[0mPUT /tasks/task_1760772508304_4702 [32m200[0m 8.857 ms - 213[0m
+✅ Auto-updated timestamp for task: task_1760772491553_4883
+PUT /tasks/task_1760772491553_4883
+[0mPUT /tasks/task_1760772491553_4883 [32m200[0m 3.376 ms - 200[0m
+✅ Auto-updated timestamp for task: 3
+PUT /tasks/3
+[0mPUT /tasks/3 [32m200[0m 3.193 ms - 184[0m
+✅ Auto-generated timestamps for new task: task_1760773547819_6980
+POST /tasks
+[0mPOST /tasks [32m201[0m 3.741 ms - 194[0m
+📥 Fetching tasks since 2025-10-18T07:45:12.039Z: 5 tasks
+[0mGET /tasks?since=2025-10-18T07%3A45%3A12.039Z [32m200[0m 0.316 ms - -[0m
+✅ Auto-updated timestamp for task: task_1760773547819_6980
+PUT /tasks/task_1760773547819_6980
+[0mPUT /tasks/task_1760773547819_6980 [32m200[0m 4.796 ms - 193[0m
+📥 Fetching tasks since 2025-10-18T07:47:47.364Z: 4 tasks
+[0mGET /tasks?since=2025-10-18T07%3A47%3A47.364Z [32m200[0m 0.291 ms - 864[0m
+✅ Auto-generated timestamps for new task: task_1760773751887_5221
+POST /tasks
+[0mPOST /tasks [32m201[0m 10.096 ms - 194[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 6.372 ms - 187[0m
+📥 Fetching tasks since 2025-10-18T07:48:12.822Z: 3 tasks
+[0mGET /tasks?since=2025-10-18T07%3A48%3A12.822Z [32m200[0m 1.936 ms - 630[0m
+📥 Fetching tasks since 2025-10-18T07:53:46.630Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T07%3A53%3A46.630Z [32m200[0m 1.044 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T08:16:57.607Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T08%3A16%3A57.607Z [32m200[0m 1.621 ms - 2[0m
+📥 Fetching tasks since 2025-10-18T08:36:55.367Z: 0 tasks
+[0mGET /tasks?since=2025-10-18T08%3A36%3A55.367Z [32m200[0m 9.022 ms - 2[0m
+📥 Fetching tasks since 2025-10-19T11:36:59.379Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T11%3A36%3A59.379Z [32m200[0m 7.221 ms - 2[0m
+✅ Auto-updated timestamp for task: task_1760773751887_5221
+PUT /tasks/task_1760773751887_5221
+[0mPUT /tasks/task_1760773751887_5221 [32m200[0m 12.484 ms - 193[0m
+✅ Auto-updated timestamp for task: 1
+PUT /tasks/1
+[0mPUT /tasks/1 [32m200[0m 5.420 ms - 186[0m
+📥 Fetching tasks since 2025-10-19T11:37:12.812Z: 2 tasks
+[0mGET /tasks?since=2025-10-19T11%3A37%3A12.812Z [32m200[0m 0.247 ms - 417[0m
+📥 Fetching tasks since 2025-10-19T11:37:48.313Z: 2 tasks
+[0mGET /tasks?since=2025-10-19T11%3A37%3A48.313Z [32m200[0m 1.123 ms - 417[0m
+📥 Fetching all tasks: 11 tasks
+[0mGET /tasks [32m200[0m 2.470 ms - -[0m
+📥 Fetching tasks since 2025-10-19T11:39:48.143Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T11%3A39%3A48.143Z [32m200[0m 1.340 ms - 2[0m
+📥 Fetching all tasks: 11 tasks
+[0mGET /tasks [32m200[0m 12.747 ms - 2378[0m
+📥 Fetching tasks since 2025-10-19T11:39:48.221Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T11%3A39%3A48.221Z [32m200[0m 5.959 ms - 2[0m
+📥 Fetching tasks since 2025-10-19T11:46:27.907Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T11%3A46%3A27.907Z [32m200[0m 1.031 ms - 2[0m
+✅ Login successful: test@gmail.com
+[0mPOST /auth/login [32m200[0m 2.499 ms - 121[0m
+📥 Fetching tasks since 2025-10-19T11:47:50.231Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T11%3A47%3A50.231Z [32m200[0m 1.966 ms - 2[0m
+📥 Fetching tasks since 2025-10-19T11:48:24.976Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T11%3A48%3A24.976Z [32m200[0m 7.531 ms - 2[0m
+📥 Fetching tasks since 2025-10-19T12:29:16.560Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T12%3A29%3A16.560Z [32m200[0m 1.334 ms - 2[0m
+📥 Fetching tasks since 2025-10-19T12:35:17.182Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T12%3A35%3A17.182Z [32m200[0m 3.633 ms - 2[0m
+📥 Fetching tasks since 2025-10-19T12:44:16.923Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T12%3A44%3A16.923Z [32m200[0m 6.946 ms - 2[0m
+📥 Fetching tasks since 2025-10-19T14:13:04.341Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T14%3A13%3A04.341Z [32m200[0m 1.722 ms - 2[0m
+📥 Fetching tasks since 2025-10-19T14:34:26.130Z: 0 tasks
+[0mGET /tasks?since=2025-10-19T14%3A34%3A26.130Z [32m200[0m 11.920 ms - 2[0m
+✅ Auto-updated timestamp for task: task_1760772508304_4702
+PUT /tasks/task_1760772508304_4702
+[0mPUT /tasks/task_1760772508304_4702 [32m200[0m 20.656 ms - 214[0m
+📥 Fetching tasks since 2025-10-20T16:04:09.499Z: 1 tasks
+[0mGET /tasks?since=2025-10-20T16%3A04%3A09.499Z [32m200[0m 0.403 ms - 234[0m
+✅ Auto-updated timestamp for task: 3
+PUT /tasks/3
+[0mPUT /tasks/3 [32m200[0m 5.763 ms - 185[0m
+📥 Fetching tasks since 2025-10-20T16:05:18.175Z: 2 tasks
+[0mGET /tasks?since=2025-10-20T16%3A05%3A18.175Z [32m200[0m 0.315 ms - 437[0m
+📥 Fetching tasks since 2025-10-20T16:06:28.975Z: 1 tasks
+[0mGET /tasks?since=2025-10-20T16%3A06%3A28.975Z [32m200[0m 2.405 ms - 205[0m
+📥 Fetching tasks since 2025-10-20T16:19:08.311Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T16%3A19%3A08.311Z [32m200[0m 2.950 ms - 2[0m
+✅ Auto-generated timestamps for new task: task_1760978216014_7636
+POST /tasks
+[0mPOST /tasks [32m201[0m 18.907 ms - 209[0m
+📥 Fetching tasks since 2025-10-20T16:34:08.490Z: 1 tasks
+[0mGET /tasks?since=2025-10-20T16%3A34%3A08.490Z [32m200[0m 0.718 ms - 229[0m
+✅ Auto-generated timestamps for new task: task_1760978310576_1046
+POST /tasks
+[0mPOST /tasks [32m201[0m 5.797 ms - 206[0m
+📥 Fetching tasks since 2025-10-20T16:38:00.228Z: 1 tasks
+[0mGET /tasks?since=2025-10-20T16%3A38%3A00.228Z [32m200[0m 2.634 ms - 226[0m
+✅ Auto-updated timestamp for task: task_1760978310576_1046
+PUT /tasks/task_1760978310576_1046
+[0mPUT /tasks/task_1760978310576_1046 [32m200[0m 5.452 ms - 205[0m
+✅ Auto-updated timestamp for task: task_1760978216014_7636
+PUT /tasks/task_1760978216014_7636
+[0mPUT /tasks/task_1760978216014_7636 [32m200[0m 3.410 ms - 208[0m
+✅ Auto-updated timestamp for task: 3
+PUT /tasks/3
+[0mPUT /tasks/3 [32m200[0m 4.293 ms - 184[0m
+✅ Auto-updated timestamp for task: task_1760772508304_4702
+PUT /tasks/task_1760772508304_4702
+[0mPUT /tasks/task_1760772508304_4702 [32m200[0m 3.702 ms - 213[0m
+📥 Fetching tasks since 2025-10-20T16:38:37.890Z: 4 tasks
+[0mGET /tasks?since=2025-10-20T16%3A38%3A37.890Z [32m200[0m 0.677 ms - 884[0m
+📥 Fetching tasks since 2025-10-20T16:39:25.866Z: 4 tasks
+[0mGET /tasks?since=2025-10-20T16%3A39%3A25.866Z [32m200[0m 0.764 ms - 884[0m
+📥 Fetching tasks since 2025-10-20T16:39:43.661Z: 4 tasks
+[0mGET /tasks?since=2025-10-20T16%3A39%3A43.661Z [32m200[0m 1.349 ms - 884[0m
+📥 Fetching tasks since 2025-10-20T16:49:08.741Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T16%3A49%3A08.741Z [32m200[0m 1.508 ms - 2[0m
+📥 Fetching all tasks: 13 tasks
+[0mGET /tasks [32m200[0m 5.306 ms - -[0m
+✅ Login successful: test@gmail.com
+[0mPOST /auth/login [32m200[0m 6.099 ms - 121[0m
+📥 Fetching tasks since 2025-10-20T17:04:09.339Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T17%3A04%3A09.339Z [32m200[0m 0.723 ms - 2[0m
+📥 Fetching tasks since 2025-10-20T17:19:09.423Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T17%3A19%3A09.423Z [32m200[0m 9.843 ms - 2[0m
+📥 Fetching tasks since 2025-10-20T17:34:09.671Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T17%3A34%3A09.671Z [32m200[0m 12.798 ms - 2[0m
+✅ Login successful: test@dlight.com
+[0mPOST /auth/login [32m200[0m 12.553 ms - 122[0m
+📥 Fetching all tasks: 13 tasks
+[0mGET /tasks [32m200[0m 5.782 ms - -[0m
+📥 Fetching tasks since 2025-10-20T18:04:10.829Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T18%3A04%3A10.829Z [32m200[0m 14.442 ms - 2[0m
+📥 Fetching tasks since 2025-10-20T18:19:11.211Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T18%3A19%3A11.211Z [32m200[0m 9.214 ms - 2[0m
+📥 Fetching tasks since 2025-10-20T18:23:05.469Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T18%3A23%3A05.469Z [32m200[0m 4.693 ms - 2[0m
+📥 Fetching tasks since 2025-10-20T18:42:25.313Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T18%3A42%3A25.313Z [32m200[0m 2.453 ms - 2[0m
+📥 Fetching tasks since 2025-10-20T20:01:57.803Z: 0 tasks
+[0mGET /tasks?since=2025-10-20T20%3A01%3A57.803Z [32m200[0m 2.072 ms - 2[0m
+✅ Auto-updated timestamp for task: task_1760773108999_4872
+PUT /tasks/task_1760773108999_4872
+[0mPUT /tasks/task_1760773108999_4872 [32m200[0m 45.621 ms - 191[0m
+✅ Auto-updated timestamp for task: task_1760773101503_8988
+PUT /tasks/task_1760773101503_8988
+[0mPUT /tasks/task_1760773101503_8988 [32m200[0m 4.885 ms - 192[0m
+📥 Fetching tasks since 2025-10-21T05:36:16.747Z: 2 tasks
+[0mGET /tasks?since=2025-10-21T05%3A36%3A16.747Z [32m200[0m 2.133 ms - 421[0m
+✅ Auto-updated timestamp for task: task_1760772604936_4376
+PUT /tasks/task_1760772604936_4376
+[0mPUT /tasks/task_1760772604936_4376 [32m200[0m 20.880 ms - 196[0m
+✅ Auto-updated timestamp for task: task_1760772597826_9362
+PUT /tasks/task_1760772597826_9362
+[0mPUT /tasks/task_1760772597826_9362 [32m200[0m 4.291 ms - 193[0m
+📥 Fetching tasks since 2025-10-21T14:41:09.391Z: 2 tasks
+[0mGET /tasks?since=2025-10-21T14%3A41%3A09.391Z [32m200[0m 1.056 ms - 427[0m
+📥 Fetching tasks since 2025-10-21T14:43:29.405Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T14%3A43%3A29.405Z [32m200[0m 6.841 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T14:56:10.018Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T14%3A56%3A10.018Z [32m200[0m 2.913 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T14:59:10.571Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T14%3A59%3A10.571Z [32m200[0m 1.128 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T14:59:34.293Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T14%3A59%3A34.293Z [32m200[0m 1.985 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T15:09:10.850Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T15%3A09%3A10.850Z [32m200[0m 3.744 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T15:09:43.861Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T15%3A09%3A43.861Z [32m200[0m 1.930 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T15:10:31.211Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T15%3A10%3A31.211Z [32m200[0m 5.375 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T15:15:50.518Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T15%3A15%3A50.518Z [32m200[0m 0.435 ms - 2[0m
+✅ Auto-updated timestamp for task: task_1760772597826_9362
+PUT /tasks/task_1760772597826_9362
+[0mPUT /tasks/task_1760772597826_9362 [32m200[0m 25.983 ms - 194[0m
+📥 Fetching tasks since 2025-10-21T15:15:50.949Z: 1 tasks
+[0mGET /tasks?since=2025-10-21T15%3A15%3A50.949Z [32m200[0m 0.272 ms - 214[0m
+✅ Login successful: test@123.com
+[0mPOST /auth/login [32m200[0m 22.684 ms - 115[0m
+✅ Login successful: test@123.com
+[0mPOST /auth/login [32m200[0m 1.583 ms - 115[0m
+✅ Login successful: test@dlight.com"
+[0mPOST /auth/login [32m200[0m 2.505 ms - 128[0m
+✅ Login successful: test@dlight.com
+[0mPOST /auth/login [32m200[0m 1.302 ms - 122[0m
+📥 Fetching all tasks: 13 tasks
+[0mGET /tasks [32m200[0m 17.873 ms - -[0m
+📥 Fetching all tasks: 13 tasks
+[0mGET /tasks [32m200[0m 2.666 ms - -[0m
+✅ Login successful: test@dlight.com
+[0mPOST /auth/login [32m200[0m 3.198 ms - 122[0m
+📥 Fetching tasks since 2025-10-21T17:53:01.906Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T17%3A53%3A01.906Z [32m200[0m 7.895 ms - 2[0m
+📥 Fetching all tasks: 13 tasks
+[0mGET /tasks [32m200[0m 1.163 ms - -[0m
+✅ Login successful: test@dlight.com
+[0mPOST /auth/login [32m200[0m 2.101 ms - 122[0m
+📥 Fetching tasks since 2025-10-21T18:01:33.881Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T18%3A01%3A33.881Z [32m200[0m 4.629 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T18:08:01.836Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T18%3A08%3A01.836Z [32m200[0m 4.905 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T18:23:02.139Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T18%3A23%3A02.139Z [32m200[0m 2.628 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T18:38:02.371Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T18%3A38%3A02.371Z [32m200[0m 1.751 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T18:40:26.733Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T18%3A40%3A26.733Z [32m200[0m 2.837 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T18:55:57.180Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T18%3A55%3A57.180Z [32m200[0m 6.162 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T19:11:16.968Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T19%3A11%3A16.968Z [32m200[0m 2.159 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T19:14:44.057Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T19%3A14%3A44.057Z [32m200[0m 1.848 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T19:15:38.704Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T19%3A15%3A38.704Z [32m200[0m 0.605 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T19:15:43.956Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T19%3A15%3A43.956Z [32m200[0m 8.994 ms - 2[0m
+📥 Fetching tasks since 2025-10-21T19:26:17.556Z: 0 tasks
+[0mGET /tasks?since=2025-10-21T19%3A26%3A17.556Z [32m200[0m 6.130 ms - 2[0m

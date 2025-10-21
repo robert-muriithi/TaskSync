@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="synced_at">Synced at %1$s</string>
+    <string name="all_synced">All synced</string>
+    <string name="pending">%1$s • %2$d pending</string>
+    <string name="sync_successful">Sync successful</string>
+    <string name="syncing_tasks">Syncing tasks...</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tasks_title">Tasks</string>
+    <string name="tasks_logout">Logout</string>
+    <string name="tasks_add">Add Task</string>
+    <string name="tasks_empty">No tasks yet</string>
+    <string name="tasks_empty_subtitle">Tap + to create your first task</string>
+    <string name="tasks_pending_sync_single">%d pending sync</string>
+    <string name="tasks_pending_sync_plural">%d pending syncs</string>
+    <string name="tasks_syncing">Syncing…</string>
+    <string name="tasks_sync_success">All tasks synced</string>
+    <string name="tasks_sync_error">Sync failed</string>
+    <string name="add_task_title">Add New Task</string>
+    <string name="add_task_title_label">Title</string>
+    <string name="add_task_title_placeholder">Enter task title</string>
+    <string name="add_task_description_label">Description</string>
+    <string name="add_task_description_placeholder">Enter task description</string>
+    <string name="add_task_save">Save Task</string>
+    <string name="add_task_title_required">Title is required</string>
+    <string name="task_details_title">Task Details</string>
+    <string name="task_details_delete">Delete Task</string>
+    <string name="task_details_save">Save Changes</string>
+    <string name="task_details_completed">Completed</string>
+    <string name="task_details_delete_confirm_title">Delete Task?</string>
+    <string name="task_details_delete_confirm_message">Are you sure you want to delete this task? This action cannot be undone.</string>
+    <string name="task_details_delete_confirm">Delete</string>
+    <string name="task_details_delete_cancel">Cancel</string>
+    <string name="sync_status_synced">Synced</string>
+    <string name="sync_status_pending">Pending</string>
+    <string name="sync_status_syncing">Syncing</string>
+    <string name="cd_add_task">Add new task</string>
+    <string name="cd_back_button">Navigate back</string>
+    <string name="cd_delete_task">Delete task</string>
+    <string name="cd_task_completed">Mark as completed</string>
+    <string name="cd_logout">Logout</string>
+    <string name="task_waiting_to_sync">%1$d task%2$s waiting to sync</string>
+    <string name="are_you_sure_you_want_to_delete_this_task_this_action_cannot_be_undone">Are you sure you want to delete this task? This action cannot be undone.</string>
+    <string name="delete_task">Delete Task?</string>
+</resources>

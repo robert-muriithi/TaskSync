@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Login Screen -->
+    <string name="login_welcome">Welcome</string>
+    <string name="login_subtitle">Sign in to manage your tasks</string>
+    <string name="login_email_label">Email</string>
+    <string name="login_email_placeholder">Enter your email</string>
+    <string name="login_button">Sign In</string>
+    <string name="login_no_password_info">No password required to sign in</string>
+    <string name="login_invalid_email">Please enter a valid email address</string>
+    
+    <!-- Error Messages -->
+    <string name="error_login_failed">Login failed. Please try again.</string>
+</resources>
