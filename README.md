@@ -2,6 +2,7 @@
 
 A modern Android task management application built with **Clean Architecture**, **Jetpack Compose**, and **offline-first synchronization**. This project demonstrates advanced Android development practices including modular architecture, dependency injection, background sync, and conflict resolution.
 
+![App demo](Screen_recording_20251022_000552.gif)
 ---
 
 ##  Project Overview
